@@ -1,148 +1,128 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesor Javier Morales</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(135deg, #1E1E1E, #3A3A3A);
-        color: white;
-        overflow-x: hidden;
-    }
-    header {
-        background: rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        animation: fadeIn 1s ease-in-out;
-    }
-    .container {
-        text-align: center;
-        padding: 50px 20px;
-    }
-    img {
-        width: 200px;
-        border-radius: 50%;
-        margin-top: 20px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-        animation: bounce 2s infinite alternate;
-    }
-    h1 {
-        font-size: 36px;
-        margin-top: 20px;
-    }
-    p {
-        font-size: 18px;
-        opacity: 0.8;
-    }
-    .section {
-        padding: 60px 20px;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.1);
-        margin: 20px auto;
-        width: 80%;
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        animation: fadeInUp 1.5s ease-in-out;
-        position: relative;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .section:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-        z-index: 10;
-    }
-    .contact-form {
-        width: 60%;
-        margin: auto;
-        text-align: left;
-    }
-    .contact-form input, .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-    .contact-form button {
-        background: #ff6600;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        transition: transform 0.3s ease;
-    }
-    .contact-form button:hover {
-        transform: scale(1.1);
-    }
-    footer {
-        background: rgba(0, 0, 0, 0.8);
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes bounce {
-        from { transform: translateY(0); }
-        to { transform: translateY(-10px); }
-    }
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1E1E1E, #3A3A3A);
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        .contact-form {
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background: #ff6600;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .contact-form button:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>Profesor Javier Morales</header><div class="container">
-    <img src="IMG_20250220_214902_549.webp" alt="Javier Morales">
-    <h1>Dr. Javier Morales</h1>
-    <p>Licenciado en Matemáticas por la Universidad Complutense de Madrid.</p>
-    <p>Más de 2 años enseñando en secundaria y universidad. Apasionado por la enseñanza y la resolución de problemas.</p>
-</div>
+    <header>Profesor Javier Morales</header>
 
-<div class="section">
-    <h2>Sobre mí</h2>
-    <p>Me especializo en álgebra, cálculo y matemáticas aplicadas. Me encanta compartir el conocimiento y ayudar a mis alumnos a desarrollar su pensamiento lógico.</p>
-</div>
-
-<div class="section">
-    <h2>Experiencia</h2>
-    <p>He trabajado como profesor en varias instituciones y academias, incluyendo colaboraciones con universidades y programas de tutoría.</p>
-</div>
-
-<div class="section">
-    <h2>Contacto</h2>
-    <div class="contact-form">
-        <form>
-            <label for="name">Nombre o Institución</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="container">
+        <img src="IMG_20250220_214902_549.webp" alt="Javier Morales">
+        <h1>Dr. Javier Morales</h1>
+        <p>Licenciado en Matemáticas por la Universidad Complutense de Madrid.</p>
+        <p>Más de 2 años enseñando en secundaria y universidad. Apasionado por la enseñanza y la resolución de problemas.</p>
     </div>
-</div>
 
-<footer>
-    &copy; 2025 Profesor Javier Morales - Todos los derechos reservados.
-</footer>
+    <div class="section">
+        <h2>Contenido en redes sociales</h2>
+        <iframe src="https://lightwidget.com/widgets/9f43178ac3b65daab6bc5b58c531b293.html" scrolling="no" style="border:none; width:100%; height:500px;"></iframe>
+    </div>
 
+    <div class="section">
+        <h2>Contacto</h2>
+        <div class="contact-form">
+            <form>
+                <label for="name">Nombre o Institución</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Profesor Javier Morales - Todos los derechos reservados.
+    </footer>
 </body>
 </html>
