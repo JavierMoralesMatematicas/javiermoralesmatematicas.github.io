@@ -9,54 +9,125 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
         }
         .container {
-            background: white;
+            width: 80%;
+            margin: auto;
+            max-width: 900px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         img {
-            width: 150px;
+            width: 200px;
             border-radius: 50%;
+            margin-top: 20px;
         }
         h1 {
             color: #333;
+            font-size: 28px;
         }
         p {
             color: #666;
+            font-size: 18px;
+            line-height: 1.5;
         }
-        .social-links a {
-            margin: 10px;
-            text-decoration: none;
+        .section {
+            padding: 50px 0;
+            text-align: center;
+            background: white;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #333;
             color: white;
             padding: 10px 15px;
+            border: none;
             border-radius: 5px;
-            display: inline-block;
+            margin-top: 10px;
+            cursor: pointer;
         }
-        .instagram {
-            background: #E4405F;
-        }
-        .twitter {
-            background: #1DA1F2;
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;window.location.href = `mailto:javiermoralesmate@gmail.com?subject=Contacto de ${name}&body=Correo: ${email}%0A%0AMensaje:%0A${message}`;
+    }
+</script>
+
 </head>
 <body>
-    <div class="container">
-        <img src="IMG_20250220_214902_549.webp" alt="Javier Morales">
-        <h1>Dr. Javier Morales</h1>
-        <p>Licenciado en Matemáticas por la Universidad Complutense de Madrid.</p>
-        <p>Más de 2 años enseñando en secundaria y universidad. Apasionado por la enseñanza y la resolución de problemas.</p>
-        <div class="social-links">
-            <a href="https://instagram.com/Prof_JMorales" class="instagram" target="_blank">Instagram</a>
-            <a href="mailto:javiermoralesmate@gmail.com" class="twitter" target="_blank">Correo</a>
-        </div>
+    <header>Profesor Javier Morales</header><div class="container">
+    <img src="IMG_20250220_214902_549.webp" alt="Javier Morales">
+    <h1>Dr. Javier Morales</h1>
+    <p>Licenciado en Matemáticas por la Universidad Complutense de Madrid.</p>
+    <p>Más de 2 años enseñando en secundaria y universidad. Apasionado por la enseñanza y la resolución de problemas.</p>
+</div>
+
+<div class="section">
+    <h2>Sobre mí</h2>
+    <p>Me especializo en álgebra, cálculo y matemáticas aplicadas. Me encanta compartir el conocimiento y ayudar a mis alumnos a desarrollar su pensamiento lógico.</p>
+</div>
+
+<div class="section">
+    <h2>Experiencia</h2>
+    <p>He trabajado como profesor en varias instituciones y academias, incluyendo colaboraciones con universidades y programas de tutoría.</p>
+</div>
+
+<div class="section">
+    <h2>Contacto</h2>
+    <div class="contact-form">
+        <form onsubmit="sendEmail(event)">
+            <label for="name">Nombre o Institución</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </div>
+</div>
+
+<footer>
+    &copy; 2025 Profesor Javier Morales - Todos los derechos reservados.
+</footer>
+
 </body>
 </html>
